@@ -4,7 +4,7 @@
 
 	git init
 
-	git add .  				( adds all the files to staging area.)
+	git add .  			( adds all the files to staging area.)
 
 	git commit -'okay' 		( commit all the staged files to local repositry )
 
