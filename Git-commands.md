@@ -4,9 +4,9 @@
 
 	git init
 
-	git add .  					( adds all the files to staging area.)
+	git add .  				( adds all the files to staging area.)
 
-	git commit -'okay' 			( commit all the staged files to local repositry )
+	git commit -'okay' 		( commit all the staged files to local repositry )
 
 	git remote add origin https://github.com/bajpaimahendra/node-rest-api-1.git  ( add new origin ) 
 
