@@ -36,9 +36,9 @@
 
 	git fetch --all 	( fetches all registered remotes and their branches )
 
-	git branch -r 	( See only REMOTE branches the current repository )
+	git branch -r 		( See only REMOTE branches the current repository )
 
-	git branch -a 	( See both LOCAL and REMOTE branches )
+	git branch -a 		( See both LOCAL and REMOTE branches )
 
 	git branch <branchName> 	( creates a new branch taking all the code from current branch )
 
