@@ -18,19 +18,26 @@ git push origin master 		( push local branch <master> to remote(github,gitlab))
 
 ### clone (download) git repository
 
-	git clone https://github.com/bajpaimahendra/sharpen-the-saw-27.git
+```console
 
-	git clone https://github.com/bajpaimahendra/sharpen-the-saw-27.git  <directory-name>
+git clone https://github.com/bajpaimahendra/sharpen-the-saw-27.git
 
-	cd <directory-name>
+git clone https://github.com/bajpaimahendra/sharpen-the-saw-27.git  <directory-name>
+
+cd <directory-name>
+```
 
 ### git status
-	
-	show status of current branch
-		- current branch
-		- local changes ( unstaged)
-		- added         ( staged )
-		- local branch is uptodate with remote branch or not
+
+```console
+
+show status of current branch
+	- current branch
+	- local changes ( unstaged)
+	- added         ( staged )
+	- local branch is uptodate with remote branch or not
+		
+```
 
 ### branching
 
@@ -42,7 +49,7 @@ git branch -r 				( See only REMOTE branches the current repository )
 
 git branch -a 				( See both LOCAL and REMOTE branches )
 
-**Before we create the branch, we should to check if the branch exists on our remote**
+** Before we create the branch, we should to check if the branch exists on our remote **
 
 git fetch --all 			( fetches all registered remotes and their branches )
 
