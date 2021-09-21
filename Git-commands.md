@@ -31,18 +31,24 @@
 ### branching
 
 	git branch 				( lists only LOCAL branches in the current repository )
-
-	** Before we create the branch, we want to check if the branch exists on our remote.---
-
-	git fetch --all 			( fetches all registered remotes and their branches )
-
+	
 	git branch -r 				( See only REMOTE branches the current repository )
 
 	git branch -a 				( See both LOCAL and REMOTE branches )
 
-	git branch <branchName> 		( creates a new branch taking all the code from current branch )
+	** Before we create the branch, we should to check if the branch exists on our remote.---
 
-	git checkout -b  feature1 master 	( ** Create a new branch from another branch )
+	git fetch --all 			( fetches all registered remotes and their branches )
+
+	git branch <new-branch-name> 		( creates a new branch taking all the code from current branch )
+	
+	** Create a new branch from another branch, no matter what is current branch
+	
+	git branch <new-branch> <base-branch> 	e.g.  git branch feature1 master
+	
+	git branch <new-branch> <tag-name> 	(Create a new branch from specific tag)
+	
+	
 
 	
 
