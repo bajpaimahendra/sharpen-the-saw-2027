@@ -32,7 +32,7 @@
 
 	git branch 				( lists only LOCAL branches in the current repository )
 
-	--- Before we create the branch, we want to check if the branch exists on our remote.---
+	** Before we create the branch, we want to check if the branch exists on our remote.---
 
 	git fetch --all 			( fetches all registered remotes and their branches )
 
@@ -42,7 +42,7 @@
 
 	git branch <branchName> 		( creates a new branch taking all the code from current branch )
 
-	git checkout -b  feature1 master 	( Create a new branch from another branch )
+	git checkout -b  feature1 master 	( ** Create a new branch from another branch )
 
 	
 
