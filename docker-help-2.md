@@ -1,4 +1,10 @@
 #### docker-compose
+	
+		1- Docker Compose is a utility to running multiple containers as a single service.
+		2- Each of the containers here run in isolation but can interact with each other when required.
+		3- Docker Compose files are very easy to write in a scripting language called YAML.
+		4- Docker Compose is that users can activate all the services (containers) using a single command.
+
 
 	https://docs.docker.com/compose/install/	
 	https://takacsmark.com/docker-compose-tutorial-beginners-by-example-basics/ (docker-compose.yml)
