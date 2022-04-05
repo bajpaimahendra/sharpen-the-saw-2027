@@ -43,27 +43,27 @@
 
 	https://www.javatpoint.com/docker-php-example ( ** )
 
-#### Dockerfile is a set of instructions for building a Docker image (i.e., an Apache process, PHP-FPM, etc.).
+	Dockerfile is a set of instructions for building a Docker image (i.e., an Apache process, PHP-FPM, etc.).
 
 
 
 #### Create the image by docker build command:
 
-cd /var/www/docker-php-app-1    ( docker-php-app-1 is a project directory )
+	cd /var/www/docker-php-app-1    ( docker-php-app-1 is a project directory )
 
-Method 1- If all the code and  Dockerfile in current directory , image name will be same as project dir
+	Method 1- If all the code and  Dockerfile in current directory , image name will be same as project dir
 
-		$ docker build . 
+		  $ docker build . 
 
-Method 2- If all the code and  Dockerfile in current directory , with image name
+	Method 2- If all the code and  Dockerfile in current directory , with image name
 
-		$ docker build . -t my-php-img  /  $ docker build -t my-php-img . 
+		  $ docker build . -t my-php-img  /  $ docker build -t my-php-img . 
 
-Method 3- If your Dockerfile is in another folder
+	Method 3- If your Dockerfile is in another folder
 
-		$ docker build . -t my-web-app -f subfolder/Dockerfile	
+		  $ docker build . -t my-web-app -f subfolder/Dockerfile	
 
-		$ docker build . -t my-php-img -f docker/Dockerfile
+		  $ docker build . -t my-php-img -f docker/Dockerfile
 
 
 #### Run the image by docker run command
@@ -104,24 +104,24 @@ Method 3- If your Dockerfile is in another folder
 
 #### Image Management
 	 
-	$ docker build . -t  <IMAGE NAME>  -f subfolder/Dockerfile		Build Docker Image from a Dockerfile
-	$ docker run -d <IMAGE NAME>  			      Run Docker Image (-d : It is used to create a daemon process)
-	$ docker images                        		  List all the  images including downloaded to your machine
-	$ docker rmi <IMAGE ID>                       Remove Docker Image
-	$ docker rmi  $(docker images -q)             Remove All Images 
+	$ docker build . -t  <IMAGE NAME>  -f subfolder/Dockerfile	Build Docker Image from a Dockerfile
+	$ docker run -d <IMAGE NAME>  			      		Run Docker Image (-d : It is used to create a daemon process)
+	$ docker images                        		  		List all the  images including downloaded to your machine
+	$ docker rmi <IMAGE ID>                       			Remove Docker Image
+	$ docker rmi  $(docker images -q)             			Remove All Images 
 
 
 #### Container Management (container is a running instance of a image)
 
-	$ docker ps -a / docker container ls -a                 List all container
-	$ docker rm <CONTAINER ID>	                      		Remove Docker Container
-	$ docker rm $(docker ps -a -q)                          Remove All Containers
-	$ docker stop $(docker ps -a -q)                        Stop All Containers
+	$ docker ps -a / docker container ls -a		List all container
+	$ docker rm <CONTAINER ID>	       		Remove Docker Container
+	$ docker rm $(docker ps -a -q)         		Remove All Containers
+	$ docker stop $(docker ps -a -q)       		Stop All Containers
 	$ docker start <CONTAINER ID>
-	$ docker container stop 86db764cdfd6 					stop a container 
+	$ docker container stop 86db764cdfd6 		stop a container 
 	$ docker logs -f <CONTAINER ID>
 
-	$ docker exec -it <CONTAINER ID> bash                   Enter into a Docker container
+	$ docker exec -it <CONTAINER ID> bash    	Enter into a Docker container
 
 	$ docker-compose up / docker-compose up --build
 
