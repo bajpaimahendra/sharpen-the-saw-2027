@@ -8,7 +8,7 @@
 ##### Customize Git Environment
 
 	git config --global user.name "Mahendra"
-	git config --global user.email "mahendra.bajpai@cg-infotech.com"
+	git config --global user.email "mbajpai@contecglobal.com"
 	git config --global branch.autosetuprebase always	           ( Avoid merge commits for pulling )
 	git config --global color.ui true				   ( Color highlighting )
 	git config --global color.status auto				   ( Color highlighting )
