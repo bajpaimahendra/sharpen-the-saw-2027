@@ -42,6 +42,7 @@
 	https://tech.mybuilder.com/virtual-hosts-with-docker/ ( ** )
 
 	https://www.javatpoint.com/docker-php-example ( ** )
+	https://rizwan-kh.github.io/posts/2019/10/docker-cheat-sheet/
 
 	Dockerfile is a set of instructions for building a Docker image (i.e., an Apache process, PHP-FPM, etc.).
 
@@ -106,23 +107,27 @@
 	 
 	$ docker build . -t  <IMAGE NAME>  -f subfolder/Dockerfile	Build Docker Image from a Dockerfile
 	$ docker run -d <IMAGE NAME>  			      		Run Docker Image (-d : It is used to create a daemon process)
+	
 	$ docker images                        		  		List all the  images including downloaded to your machine
 	$ docker rmi <IMAGE ID>                       			Remove Docker Image
 	$ docker rmi  $(docker images -q)             			Remove All Images 
 
 
 #### Container Management (container is a running instance of a image)
-
-	$ docker ps -a / docker container ls -a		List all container
-	$ docker rm <CONTAINER ID>	       		Remove Docker Container
-	$ docker rm $(docker ps -a -q)         		Remove All Containers
+	$ docker ps 					to see all running containers
+	$ docker ps -a / docker container ls -a		to see all containers (running, stopped, exited, etc.)
+	
+	$ docker stop <CONTAINER ID>			to stop a running container
+	$ docker rm <CONTAINER ID>	       		to remove a stopped container
+	
 	$ docker stop $(docker ps -a -q)       		Stop All Containers
-	$ docker start <CONTAINER ID>
-	$ docker container stop 86db764cdfd6 		stop a container 
-	$ docker logs -f <CONTAINER ID>
+	$ docker rm $(docker ps -a -q)         		Remove All Containers
+	
+	$ docker start <CONTAINER ID>			to start a  container
 
-	$ docker exec -it <CONTAINER ID> bash    	Enter into a Docker container
+	$ docker logs <CONTAINER ID> 			to see logs from containers
 
+	$ docker exec -it <CONTAINER ID> bash    	Enter into running container
 	$ docker-compose up / docker-compose up --build
 
 
