@@ -118,12 +118,11 @@
 	$ docker ps -a / docker container ls -a		to see all containers (running, stopped, exited, etc.)
 	
 	$ docker stop <CONTAINER ID>			to stop a running container
+	$ docker start <CONTAINER ID>			to start a  container
 	$ docker rm <CONTAINER ID>	       		to remove a stopped container
 	
 	$ docker stop $(docker ps -a -q)       		Stop All Containers
 	$ docker rm $(docker ps -a -q)         		Remove All Containers
-	
-	$ docker start <CONTAINER ID>			to start a  container
 
 	$ docker logs <CONTAINER ID> 			to see logs from containers
 
