@@ -43,7 +43,7 @@
 	$ docker-compose down  				Stop and remove the containers
 	$ docker-compose down -v 			delete the named volumes by passing the -v parameter
 
-	$ docker-compose run web			create containers from images  for a service mentioned in the compose file
+	$ docker-compose run web			create containers from images for a service mentioned in compose file
 	$ docker-compose stop 				stops the running containers of specified services
 
 	$ docker-compose ps 	 			to see what is currently running containers
@@ -55,3 +55,6 @@
 	OR 
 
 	$ curl localhost:8080
+
+
+Note : Docker Swarm is the preferred way to run applications in production. We’ll learn about Docker Swarm and its alternatives, like Kubernetes in a later most.
