@@ -57,4 +57,8 @@
 	$ curl localhost:8080
 
 
+### Need to Explore
+	1- Portainer
+	2- Docker Swarm
+	3- docker-machine 
 Note : Docker Swarm is the preferred way to run applications in production. We’ll learn about Docker Swarm and its alternatives, like Kubernetes in a later most.
