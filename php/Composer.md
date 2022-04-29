@@ -30,50 +30,52 @@
 
 #### Using Composer in a PHP Project
 
-	$ cd /var/www/html/makeifly 					( go to project root )  
+	$ cd /var/www/html/makeifly 				( go to project root )  
 
-	$ composer show 								(  Show a list of the packages installed in this project )
+	$ composer show 					(  Show a list of the packages installed in this project )
 
-	$ composer init 								(  creates an "empty" composer.json in current dir )
+	$ composer init 					(  creates an "empty" composer.json in current dir )
 
-	Search for packages $ composer search package-name
+	SEARCH PACKAGE $ composer search package-name
 
-			$ composer search laravel
-
-
-	Add packages $ composer require vendor-name/package-name
-
-			Adds new packages to the composer.json file from the current directory. If no file exists one will be created on the fly. the modified requirements will be installed
-
-			e.g.
-
-			$ composer require cocur/slugify
+		$ composer search laravel
 
 
-	Install dependencies $ composer install
+	ADD PACKAGE $ composer require vendor-name/package-name
 
-			Downloads and installs all the libraries and dependencies outlined in the composer.lock file. 
-			If the file does not exist it will look for composer.json and do the same, creating a composer.lock file.
+		Adds new packages to the composer.json file from the current directory.
+		If no file exists one will be created on the fly. the modified requirements will be installed
 
-			Note : composer.lock should always be committed to the repository. so other member will install the same version of library
+		e.g.
 
-			And you should add 'vender' dir to .gitignore
+		$ composer require cocur/slugify
 
 
-	Removing packages $ composer remove vendor-name/package-name  	
+	INSTALL DEPENDENCIES $ composer install
 
-			 Remove any specific package from your composer.json file 
+		Downloads and installs all the libraries and dependencies outlined in the composer.lock file. 
+		If the file does not exist it will look for composer.json and do the same, creating a composer.lock file.
+
+		Note : composer.lock should always be committed to the repository.
+		       So other member will install the same version of library
+
+		And you should add 'vender' dir to .gitignore
+
+
+	REMOVE PACKAGE $ composer remove vendor-name/package-name  	
+
+		Remove any specific package from your composer.json file 
 
 	$ composer cc / composer clear-cache 			( clear all the cached packages  )
 
 
-	Update packages 
+	UPDAGTE PACKAGE 
 
 		update newer version of libraries defined in the composer.json file. The composer.lock file will be updated
 
-		$ composer update  									Updates all packages
+		$ composer update  					Updates all packages
 
-		$ composer update --with-dependencies 				Updates all packages and its dependencies
+		$ composer update --with-dependencies 			Updates all packages and its dependencies
 
 
 
