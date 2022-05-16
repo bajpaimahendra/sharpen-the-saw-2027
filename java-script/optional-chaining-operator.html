@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>optional-chaining-operator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		- To access a property of an object using the optional chaining operator
+		objectName ?. propertyName
+		objectName ?. [expression]
+		*/
+		const getUser = (id)=>{
+			if(id<=0){
+				return null;
+			}
+
+			// get the user from database
+    		// and return null if id does not exist
+    		// ...
+    		// if user was found, return the user
+
+    		return {
+    			id: id,
+    			userName: 'admin',
+    			profile:{
+    				avatar: '/avatar.png',
+    				language: 'English'
+    			}
+    		};
+		}
+
+		// let user = getUser(1);
+		// console.log(user.profile.avatar); // ES5 way
+
+		// let profile = user?.profile;
+		// console.log(profile);
+
+		// let avatar = user?.profile?.avatar;  //-- if user and profile are not null
+		// console.log(avatar);
+
+		// -- is same as belwo ternary oprator
+
+		//let profile = (user !== null || user !== undefined)
+        //    ? user.profile
+        //    : undefined;
+
+    /* 
+    Combining with the nullish coalescing operator
+    optional chaining operator (?.) 
+    nullish coalescing operator (??) 
+    */
+
+    // let user = getUser(-1);
+
+    // let defaultProfile = {default:'/default.png', language:'English'};
+    // let profile = user?.profile??defaultProfile;
+    // console.log(profile);
+
+	</script>
+
+	<script type="text/javascript">
+		/*
+			optional chaining operator with function calls
+			functionName ?. (args)
+		*/
+
+
+		// let file = {
+		// 	read(){
+		// 		return 'file content';
+		// 	},
+		// 	wirte(content){
+		// 		console.log( `writing ${content} to file...` );
+		// 	}
+		// };
+
+		// let data = file.read?.();
+
+		// console.log(data);
+
+		// file.wirte?.('Bajpai');
+
+		// let compressedData = file.compress?.();
+		// console.log(compressedData);  // undefined
+
+	</script>
+
+<script type="text/javascript">
+	/*
+	The optional chaining operator (?.) is also helpful if you have a function with an optional callback
+	*/
+
+	const getEmp = (id, callbackFun)=>{
+
+			let emp = {
+				id: id,
+				userName: 'admin'
+			};
+
+			// test if the callback exists
+
+			callbackFun?.(emp);  // ES6 Way
+
+			//-- OR --
+
+		    if ( callback ) {    // ES5 way
+		        callback(emp);
+		    }
+
+		    return emp;
+	}
+</script>
+
+
+
+</body>
+</html>

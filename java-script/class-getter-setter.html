@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+	
+class Person{
+
+	constructor(firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	get firstName(){
+		return this._firstName;
+	}
+	get lastName(){
+		return this._lastName;
+	}
+	getFullName(){
+		return this.firstName+' '+this.lastName;
+	}
+	set firstName(firstName){
+		fName = fName.tirm();
+		if(fName===''){
+			throw 'firstName can not be empty';
+		}
+		this._firstName = fName.tirm();
+	}
+	set lastName(lName){
+		this._lastName = lName.tirm();
+	}
+}
+
+let p1 = new Person('Mahendra', 'Bajpai');
+	
+</script>
+
+
+</html>

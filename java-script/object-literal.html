@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Literal</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+	let server = {
+		name: 'Server',
+
+		'starting up'(){
+		console.log( this.name+' is starting up !' );
+		}
+	};
+	console.log( server['starting up']() );
+</script>
+
+</html>

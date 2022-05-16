@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+/* Global context */
+
+
+	//console.log(this); // `window` object
+	//console.log(globalThis); // `window` object
+
+	//this.color = 'Red';
+	//console.log(window.color); // Red
+
+	//window.color = 'Red';
+	//console.log(this.color); // Red
+
+
+/* Function context */
+
+
+//----------------- Example 1 function invocation ----------------------------------------
+
+	// function show(){
+	// 	console.log(this); 	// `window` object
+	// }
+	// show();
+	// window.show(); // same as above
+
+//----------------- Example 2 function invocation in global strict mode --------------------
+
+	// "use strict"
+
+	// function show(){
+	// 	console.log(this); // undefined due to "use strict" on top
+	// }
+	// show();
+
+
+//----------------- Example 3 function invocation inside function strict mode ----------------------------
+
+	function show(){
+		"use strict" 		// strict mode to a specific function and inner function only
+		console.log(this); 	// undefined
+
+		function display(){
+			console.log(this); // undefined
+		}
+		display();
+	}
+	show();
+
+</script>
+</html>

@@ -1,6 +1,8 @@
 
 	https://www.javascripttutorial.net/
 	https://javascript.info/
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+	https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c
 
 #### javascript history
 
@@ -53,7 +55,7 @@
     var salary;  // console.log(salary); // undifined because declared but not assign any value
         salary = 1900000;
 
-    NOTE : Starting in ES6, you can use the let keyword  instead of var to declare a variable 
+    NOTE : Starting in ES6, you can use the `let` keyword  instead of `var` to declare a variable 
     
     let age = 10;
 
@@ -156,6 +158,7 @@
 	- a function is a group of statement to perform a perticular task
 	- benifit : reusability
 	- All functions implicitly return undefined if they don’t explicitly return a value.
+	- Function parameter are local variables for that function.
 
 	function functionName(parameters) {
 	    // function body
@@ -169,6 +172,152 @@
   	}
   
  	fun1();
+
+ 	function add(a, b) {
+    	return a + b;
+	}
+
+	let sum = add;
+
+#### Parameters vs. Arguments
+
+	- When declaring a function, you specify the parameters.
+	- When calling a function, you pass the arguments.	
+
+
+#### Anonymous functions	
+
+	- function without name.
+
+	function() {
+	    // Function Body
+	 }
+
+	let greet = function () {
+    	console.log("Welcome to GeeksforGeeks!");
+	};
+
+	greet();
+
+#### IIFE i.e. Immediately invoked function execution 
+
+	- function calls itself using a pair of parentheses ()
+
+	let person = {
+	    firstName: 'John',
+	    lastName: 'Doe'
+	};
+
+	(function () {
+	    console.log(person.firstName} + ' ' + person.lastName);
+	})(person);
+
+
+#### Arrow functions OR Fat Arrow Function
+
+	- ES6 introduced arrow function expression.
+	- Anonymous functions are functions without names.
+	- Arrow function provides a shorthand for declaring anonymous functions
+	- Main benefit: No binding of ‘this’ i.e.
+		Arrow functions shine best with anything that requires this to be bound to the context, 
+		and not the function itself.
+
+
+	 ( param1, parma2,…paramn )=> {       
+	 	//code block 
+	 }
+
+	 function_arrow.js
+
+#### Recursive Function
+
+	- A recursive function is a function that calls itself until it doesn’t.
+	- A recursive function always has a condition that stops the function from calling itself.
+
+### Section 6. Objects & Prototypes ###
+
+#### Objects
+
+	object.js
+	object-values.js
+	object-assign.js
+	object-is.js
+	object-properties.js
+	object-literal.html
+	object-literal-extensions.js
+
+#### Constructor functions
+
+	constructor_functions.js
+
+#### Prototype
+
+	prototype.js
+
+#### prototypal inheritance
+
+	- a class is a blueprint for creating objects.
+	- if we create new class to reuse the functionality of an existing class, called classical inheritance.
+	- JavaScript doesn’t use classical inheritance. Instead, it uses prototypal inheritance.
+	- In prototypal inheritance, an object “inherits” properties from another object via the prototype linkage.
+
+	prototypal_inheritance.js
+	prototypal_inheritance-2.js
+
+
+#### this
+	
+	this.js
+
+#### Object Properties 
+
+	object-properties.js
+	object-literal.html
+	object-literal-extensions.js
+
+#### for…in loop 
+
+	for-in-Loop.js
+	for-in-Loop-2.js
+
+#### factory-functions
+
+	factory-functions.js
+
+#### Object Destructuring 
+
+	object-destructuring.js
+
+#### Optional chaining operator
+
+	optional-chaining-operator.html 	
+
+
+###### Section 7. Classes  16-May TO 22 May
+
+	- class is a blueprint for creating objects.
+	- A class encapsulates data and functions.
+	- ES6 classes are just special functions.
+
+#### Section 8. Advanced Functions 23-May TO 29-May
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 
@@ -256,3 +405,8 @@ https://medium.com/engineered-publicis-sapient/javascript-es6-es7-es10-where-are
 ### chrome extension
 
 React Developer Tools
+
+
+
+
+
