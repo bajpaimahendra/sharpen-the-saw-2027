@@ -207,6 +207,24 @@
 
 
 
+/*
+
+What is the difference between object keys with quotes and without quotes?
+
+obj = {'foo': 'bar'}  AND obj = {foo: 'bar'} has No difference
+
+difference if you use a numeric literal as a property name
+
+obj = {'12e34': 'bar'}  AND obj = {12e34: 'bar'} has  difference
+
+
+NOTE, the JSON data exchange format does require double quotes around identifiers (and does not allow single quotes).
+
+*/
+
+
+
+
 
 
 

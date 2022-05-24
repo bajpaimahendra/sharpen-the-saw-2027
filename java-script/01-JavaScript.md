@@ -293,13 +293,15 @@
 	optional-chaining-operator.html 	
 
 
-###### Section 7. Classes  16-May TO 22 May
+###### Section 7. Classes
 
 	- class is a blueprint for creating objects.
 	- A class encapsulates data and functions.
 	- ES6 classes are just special functions.
 
-#### Section 8. Advanced Functions 23-May TO 29-May
+#### Section 8. Advanced Functions 18-May TO 22-May
+
+
 
 
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	
+	class Circle{
+
+	#radius;
+	
+	constructor(radius){
+		this.#radius = radius;
+		this.diameter = this.#radius*2;
+	}
+	get area(){ 			// getter method
+
+		return Math.PI*Math.pow(this.#radius,2);
+	}
+}
+
+let circleObj = new Circle(10);
+console.log( circleObj.area );
+
+
+
+</script>
+</html>

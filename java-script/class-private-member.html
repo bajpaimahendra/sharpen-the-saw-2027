@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+/* *** Example 1  Private instance method
+*/
+
+/*
+
+class Person{
+
+	#firstName;
+	#lastName;
+	constructor(firstName, lastName){
+		this.#firstName = firstName;
+		this.#lastName = lastName;
+	}
+
+	getFullName(format = true){
+		return format ? this.#firstLast() : this.#lastFirst();
+	}
+
+	#firstLast() {
+		return this.#firstName+' '+this.#lastName;
+	}
+
+	#lastFirst(){
+		return this.#lastName+' '+this.#firstName;
+	}
+}
+
+let personObj = new Person('Mahendra', 'Bajpai');
+
+console.log( personObj.getFullName() );
+//console.log( personObj.firstLast() );
+
+
+*/
+
+
+
+/* *** Example 2 Private static method **/
+
+
+class Person {
+	#firstName;
+	#lastName;
+	constructor(firstName, lastName){
+		this.#firstName = Person.#validate(firstName);
+		this.#lastName = Person.#validate(lastName);
+	}
+	static #validate(name){
+		if(typeof name==='string'){
+			let str = name.trim();
+			if(str.length>=3){
+				return str;
+			}
+		}
+		throw 'The name must be a string with at least 3 characters';
+	}
+	getFullName(){
+		return this.#firstName+' '+this.#lastName;
+	}
+}
+
+let personObj = new Person('Mahendra', 'Bajpai');
+
+console.log( personObj.getFullName() );
+
+</script>
+
+</html>

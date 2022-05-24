@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+/* *** Example 1 ********
+*/
+
+// let greeting = 'Hi';
+var greeting = 'Hi';  // var will availabel via `this` in `window` object
+
+
+
+function say(name) {
+    console.log(this.greeting + ' ' + name); // we reference the `greeting` via the `this`
+}
+
+say.call(this,'John');  
+
+
+var messenger = {
+    greeting: 'Hello'
+}
+
+say.call(messenger,'John');  
+
+
+</script>
+</html>
