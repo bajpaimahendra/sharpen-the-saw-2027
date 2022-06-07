@@ -4,7 +4,9 @@
 	- Destructuring means elements of an array into individual variables.
 	- This feature is available form ES6
 
-	- let [x, y, z] = scoresArr; NOTE: square brackets [] in left look like the array syntax but they are not.
+	- let [x, y, z] = scoresArr; 
+
+		NOTE: square brackets [] in left look like the array syntax but they are not.
 */
 
 /*  Example 1 ***************************

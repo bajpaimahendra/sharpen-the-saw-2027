@@ -6,6 +6,8 @@
     function fn(a,b,...argsArr) {
       //...
     }
+    
+ The rest parameters must be at the end
 
     function fn(a,...rest, b) {
       // error
@@ -14,17 +16,41 @@
 */
 
 
-let fun = function(a, b, ...c){
 
-    console.log(a+' '+b);
-    console.log(c);
-    console.log(c[0]);
-    console.log(c.length);
-    console.log(c.indexOf('Richa'));
+
+
+function sumAll(...parmArr){
+  //console.log(parmArr);
+  let sum =0;
+  for(const ele of parmArr){
+      sum +=ele;
+  }
+  return sum;
 }
 
-fun('Richa', 'Anjali', 'Mahendra', 'Bajpai');
 
+let sum = sumAll(1, 2, 3, 4, 5, 6, 7);
+
+console.log(sum);
+
+
+
+
+
+/* ****************************************************** */
+
+
+
+// let fun = function(a, b, ...c){
+
+//     console.log(a+' '+b);
+//     console.log(c);
+//     console.log(c[0]);
+//     console.log(c.length);
+//     console.log(c.indexOf('Richa'));
+// }
+
+// fun('Richa', 'Anjali', 'Mahendra', 'Bajpai');
 
 
 

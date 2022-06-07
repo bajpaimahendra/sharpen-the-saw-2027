@@ -27,7 +27,7 @@
 	e.g.
 	`request` module in Node.js
 	`http`    module in Angular
-	`axios`   in React
+	`axios`   in Node
 	`fetch`  of javascript
 
 	When first tak is depend on second task, and first task is taking time, then we will use callback or promise or async/await
@@ -35,6 +35,8 @@
 */
 
 /* **************
+ callbacks are used to deal with an asynchronous operation *****
+
  Note: The callback function is helpful when you have to wait for a result that takes time. 
  For example, the data coming from a server because it takes time for data to arrive.
 */
@@ -168,13 +170,13 @@
 
 
 
-
+/* ************
 
 	// Nesting  callbacks is known as the pyramid of doom or the callback hell, which create complexity
 
 	//To avoid the callback hell, we use promises or async/await functions.
 
-
+*/
 
 // function dispaly1(callback){
 // 	msg = 'Hi...111'

@@ -9,6 +9,9 @@
 	- Closures help in maintaining the state between function calls without using a global variable.
 	-A closure is a combination of a function and its ability to remember variables in the outer scope.
 
+
+-A function closed by another function, called closer function or inner function
+
 */
 
 

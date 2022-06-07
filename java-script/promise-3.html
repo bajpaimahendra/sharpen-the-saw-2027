@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Promise Demo</title>
+</head>
+<body>
+	<div id="container">
+        <div id="message"></div>
+        <button id="btnGet">Get Message</button>
+    </div>
+</body>
+
+<script type="text/javascript">
+	
+	function load(url){
+		return new Promise((resolve, reject)=>{
+			const request = new XMLHttpRequest();
+			request.onreadystatechange = function(){
+				if(this.readyState===4 && this.status==200){
+					resolve(this.response);
+				}else{
+					console.log(this);
+					reject(this.status);
+				}
+
+			};
+			console.log(url);
+			request.open('GET', url, true);
+			request.send();
+
+		});
+	}
+
+
+	const url = 'https://www.javascripttutorial.net/sample/promise/api.json';
+	//const url = 'https://api.ipify.org/?format=json';
+	const btn = document.querySelector('#btnGet');
+	const msg = document.querySelector('#message');
+
+	btn.addEventListener('click',()=>{
+		load(url)
+		    .then(
+		    	(res)=>{
+		    		const result = JSON.parse(res);
+		    		//console.log('success = ',result);
+		    		msg.innerHTML = result.message;
+		    	}
+		    )
+		    .catch((error)=>{
+		    	console.log('failed = ',error);
+		    	msg.innerHTML = `Error getting the message, HTTP status: ${error}`;
+		    	//msg.innerHTML = 'Error getting the message, HTTP status:';
+		    });
+	});
+
+</script>
+
+
+</html>

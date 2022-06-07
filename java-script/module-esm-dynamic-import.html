@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Module</title>
+</head>
+<body>
+<h3>
+
+<br/>
+
+	- https://www.javascripttutorial.net/es-next/javascript-import/
+
+<br/><br/>
+</h3>
+	<ul> <b>Dynamic import of modules throug import() function</b>
+		<li>import/export statements don't work if inside {...}</li>
+		<li>
+			if (something) {
+			  import {sayHi} from "./say.js"; // Error: import must be at top level
+			}
+		</li>
+		<li>Prior to ES2020, it was not possible to dynamically load the module when needed.</li>
+		<li>ES2020 introduced the dynamic import of the module via the function-like `import()`.</li>
+		<li>`import()` returns a Promise that will be fulfilled once the module is loaded completely.</li>
+		<li>Since the import() returns a Promise, we can use the async/await.</li>
+	</ul>
+
+<br/><br/>
+
+	- $ static-server
+	
+<br/><br/>
+
+	http://localhost:9080/module-esm-dynamic-import.html
+<br/><br/>
+
+	<button id="show">Show Message</button>
+
+</body>
+
+<script type="module" src="module-esm-dynamic-import.js"></script>
+
+
+
+
+</html>

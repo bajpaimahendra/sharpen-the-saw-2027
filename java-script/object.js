@@ -1,5 +1,7 @@
 /*
 	https://www.javascripttutorial.net/javascript-objects/
+	https://www.educative.io/edpresso/how-to-use-objectfromentries-in-javascript
+	https://javascript.info/
 	
 	- Object is  “key: value” pairs: in {...}
 	- Object can have a properties and a methods
@@ -10,20 +12,14 @@
 
 
 
-/* ---- create empty object by `object constructor` Method 1 ---------- */
+/* ---- create empty object by using one of two syntaxes: ---------- */
 
 
-// let emp = new Object();
+// let user = new Object();  	// "object constructor" syntax
 
-// console.log(emp);   // {}
+let user = {};					// "object literal" syntax
 
-
-/* ------ create empty object by `object literal`  Method 2 --------- */
-
-
-// let user = {};
-
-// console.log(user); // {}
+// console.log(user);   // {}
 
 
 
@@ -175,7 +171,7 @@
 
  let emp = {
 
-	[empType]: 'Job Title',
+	[empType]: 'Job Title',   // property(key) can be a variable
 	doj: '23-12-2019',
 	salary: 29000,
 	900: 'tax',
@@ -221,6 +217,25 @@ obj = {'12e34': 'bar'}  AND obj = {12e34: 'bar'} has  difference
 NOTE, the JSON data exchange format does require double quotes around identifiers (and does not allow single quotes).
 
 */
+
+
+
+/* *** Property value shorthand */
+
+
+function makeUse(name, age){
+	return {
+		name,   // same as name: name
+		age, 	// same as age: age
+	};
+}
+
+
+let userObj = makeUse('Mahendra', 40);
+console.log(userObj);
+
+
+
 
 
 

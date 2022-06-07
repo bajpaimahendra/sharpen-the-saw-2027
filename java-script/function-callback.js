@@ -10,7 +10,7 @@
 
 
 
-/* *** Example 1 */
+/* *** Example 1 *********/
 
 
 
@@ -44,7 +44,7 @@ function filter(numbersArr, fn){
 // console.log( filter(numbers, isEven) );
 
 	
-/* Example 2 callback can be anonymous */
+/* Example 2 callback can be anonymous ******************/
 
 
 // let oddNUmbers = filter(numbers, function(number){
@@ -54,7 +54,8 @@ function filter(numbersArr, fn){
 
 
 
-	/* Example 3 callback can be arrow */
+/* Example 3 callback can be arrow **********************/
+
 
 
 
@@ -63,6 +64,79 @@ function filter(numbersArr, fn){
 // });	
 // console.log(evenNumbers);
 
+
+
+
+
+
+/* Example 4 Error Handling V1 ****************************/
+
+
+
+
+// const divide = function(a,  b, successCallBack, errorCallBack){
+// 	if(b==0){
+// 		errorCallBack('Denominator can not be zero');
+// 	}else{
+// 		let res = a/b;
+// 		successCallBack(res);
+// 	}
+// }
+
+
+// divide(4, 2, function(result){
+// 	console.log('result = ', result);
+// },
+// function(errMsg){
+// 	console.log(errMsg);
+// }
+// );
+
+
+
+/* Example 5 Error Handling V2 ****************************/
+
+
+
+
+// const divide = function(a,  b, successCallBack, errorCallBack){
+// 	if(b==0){
+// 		return errorCallBack('Denominator can not be zero !');
+// 	}else{
+// 		return res = successCallBack(a, b);
+
+// 	}
+// }
+
+
+// let result = divide(4, 0, (x, y)=> x/y, errMsg=>errMsg);
+
+
+// console.log(result);
+
+
+
+
+
+/* Example 6 Error Handling V3 ****************************/
+
+
+
+
+
+const divide = (a,b, successCallBack, errorCallBack)=>{
+		if(b==0){
+		return errorCallBack('Denominator can not be zero !');
+	}else{
+		return successCallBack(a, b);
+
+	}
+}
+
+let result = divide(4, 5, (x, y)=> x/y, errMsg=>errMsg);
+
+
+console.log(result);
 
 
 

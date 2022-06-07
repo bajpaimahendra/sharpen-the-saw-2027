@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6 Module</title>
+</head>
+<body>
+<h5>
+
+<br/>
+
+	1- Install npm package globally npm -g install static-server
+
+<br/><br/>
+
+	1- $ cd /home/bajpai/Desktop/sharpen-the-saw-27/java-script
+
+<br/><br/>
+
+	3- $ static-server
+	
+<br/><br/>
+
+	http://localhost:9080/module.html
+</h5>
+</body>
+
+<script type="module">
+
+import {msg} from './utils/message.js';
+
+//document.body.innerHTML = msg;
+
+const h1 = document.createElement('h1');
+h1.textContent = msg;
+document.body.appendChild(h1);
+
+</script>
+
+<script type="module" src="module-esm-3.js"></script>
+
+
+</html>
