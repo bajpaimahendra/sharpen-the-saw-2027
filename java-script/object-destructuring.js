@@ -126,30 +126,26 @@
 
 
 
-// let employee = {
-// 	id: 1001,
-// 	name:{
-// 		firstName: 'Mahendra',
-// 		lastName: 'Bajpai'
-// 	}
-// };
-
-
-// 	// let {
-// 	// 	name:{firstName, lastName}
-// 	// } = employee;
-
-// 	// console.log(firstName, lastName);
+let employee = {
+	id: 1001,
+	name:{
+		firstName: 'Mahendra',
+		lastName: 'Bajpai'
+	}
+};
 
 
 // let {
-// 	name,
-// 	name:{ firstName, lastName},
-// 	id
-// } = employee;
+// 	 	name:{firstName, lastName}
+// 	} = employee;
 
-// console.log(firstName, lastName, id);
-// console.log(name);
+// console.log(firstName, lastName);
+
+
+let { name:nameObj, id } = employee;  	// sequence doesn't matter
+
+console.log(id);
+console.log(nameObj);
 
 
 
@@ -187,7 +183,7 @@
 	};
 
 
-	display1(person);
-	display2(person);
-	display3(person);
+	// display1(person);
+	// display2(person);
+	// display3(person);
 
