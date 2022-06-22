@@ -39,7 +39,38 @@ show status of current branch
 		
 ```
 
-### branching
+### --- branching ---
+
+##### Create a new branch( staging ) from another branch ( master ) , No matter what is current branch
+
+    git branch staging master
+
+    OR
+
+    git checkout -b  staging staging
+
+    git push -u origin staging
+
+##### Delete Local Branch
+
+	$  git branch -d <branch_name>	    (-d, which is an alias for --delete )
+	$  git branch -D <branch_name> 	    (-D, which is an alias for --delete --force )
+
+	e.g.
+
+	$  git branch -D feature2 
+	
+##### Delete Remote Branch
+	
+	$  git push -d <remote_name>  <branch_name>
+
+	e.g.
+
+	$  git push -d origin  feature2
+
+
+
+
 
 ```console
 
