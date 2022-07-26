@@ -5,7 +5,7 @@
 	git config --list		( check configuration )
 
 	
-##### Customize Git Environment
+##### Customize Git Environment global
 
 	git config --global user.name "Mahendra"
 	git config --global user.email "mbajpai@contecglobal.com"
@@ -14,6 +14,13 @@
 	git config --global color.status auto				   ( Color highlighting )
 	git config --global color.branch auto				   ( Color highlighting )
 	git config core.fileMode false					   ( inside project dir after clone)
+
+
+##### Git user for particular Reop
+
+	cd <dirName>
+	git config  user.name "Mahendra"
+	git config  user.email "mbajpai@contecglobal.com"
 
 
 ##### Show Current  Branch In Terminal	
