@@ -5,7 +5,7 @@
 
 
 	1- Install node.js
-	2- Install npm package globally npm -g install static-server
+	2- Install npm package globally $ npm -g install static-server
 	3- $ cd /home/bajpai/Desktop/sharpen-the-saw-27/java-script
 	4- $ static-server
 

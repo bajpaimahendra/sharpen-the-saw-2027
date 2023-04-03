@@ -86,7 +86,7 @@
 
 	Create a new branch from another branch, no matter what is current branch
 
-	git branch <new-branch> <base-branch> 	e.g.  git branch feature1 master
+	git branch <new-branch> <base-branch> 	e.g.  git branch nov21_2022 master
 
 	git branch <new-branch> <tag-name> 	(Create a new branch from specific tag)
 

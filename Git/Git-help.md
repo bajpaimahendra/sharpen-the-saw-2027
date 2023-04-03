@@ -1,3 +1,41 @@
+===================== GLO USSD ==========================================
+ssh dev@54.72.43.81
+
+cd /var/www/html/ussd/
+
+tail -f log.log
+tail -f log.log |grep -A5 8113726101
+tail -f log.log |grep 7059244229
+tail -f log.log |grep -A5 7059244229
+
+
+sudo vim index.php
+cd /var/www/html/ussd/
+ps aux |grep sms
+ps aux |grep bear
+less smskannel.conf
+cd gw
+cd /usr/local/src/gateway-1.5.0/
+cd ../ussd/
+ls
+less response.php
+cd ../telnet/
+less index.php 
+
+
+sudo ./bearerbox -v 1 smskannel.conf
+
+cd /usr/local/src/gateway-1.4.4/gw
+
+
+telnet 41.203.65.15 2784
+
+history |grep gw
+
+
+
+
+==============================================================
 
 ##### Frequently used commands
 
@@ -31,7 +69,7 @@
 	git push -d <remote_name> <branch_name>
 	git branch -d <branch_name>
 
-##### Create a new branch from another branch
+##### Create a newBranch(feature1) from anotherBranch(master)
 	
 	git checkout -b  feature1 master
 
@@ -126,6 +164,21 @@ git revert
 #######################################################################
 	What is the HEAD in git ?
 	https://stackoverflow.com/questions/2529971/what-is-the-head-in-git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
